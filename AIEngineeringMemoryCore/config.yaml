@@ -1,0 +1,23 @@
+management_ai:
+  api_base: "http://localhost:11434/v1"
+  api_key: ""
+  model: "llama3"
+  max_retries: 3
+  timeout: 60
+  temperature: 0.3
+
+memory:
+  storage_path: "./.memory"
+  heartbeat_ratio: 0.8
+  context_limit: 4096
+  cold_storage_enabled: true
+
+retrieval:
+  top_k_summaries: 5
+  top_m_entities: 10
+  embed_model: "nomic-embed-text"
+  embed_api_base: "http://localhost:11434"
+
+memory_manager:
+  mode: "hybrid"
+  async_heartbeat_batch: 60
